@@ -113,7 +113,7 @@ const PaginaPrincipal = () => {
         <Box>
             <Logo src={logo}/>
             <Titulo>Antes de salir a las sierras</Titulo>
-            <Parrafo>Descarga nuestra guia para conocer mas sobre la flora y fauna con la que te encontraras y los cuidados que debes tener sobre ella.</Parrafo>
+            <Parrafo>Descarga nuestra guía para conocer más sobre la flora y fauna con la que te encontrarás y los cuidados que debes tener sobre ella.</Parrafo>
             <Boton>
                 <Descarga download="Guia - Granja los Pibes" href={archivo}>Descargar</Descarga>
             </Boton>
