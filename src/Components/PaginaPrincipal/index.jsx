@@ -5,6 +5,7 @@ import styled from "styled-components";
 import facebook from "../../img/facebook.png"
 import instagram from "../../img/instagram.png"
 import whatsapp from "../../img/whatsapp.png"
+import ubicacion from "../../img/ubicacion.png"
 
 
 const Box = styled.div`
@@ -77,6 +78,30 @@ const Icon = styled.img`
     height: 32px;
     margin-inline: 15px;
 `
+const Vinculo = styled.a`
+    text-decoration: none;
+    width: 32px;
+    height: 32px;
+`
+
+const Ubicacion = styled.a`
+    position: absolute;
+    top: 735px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+`
+const Ubi = styled.img`
+    width: 20px;
+    height: 20px;
+    margin: 0 3px 3px 0;
+`
+
+const Texto = styled.p`
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+`
 
 const PaginaPrincipal = () => {
     return (
@@ -86,16 +111,20 @@ const PaginaPrincipal = () => {
             <Parrafo>Descarga nuestra guia para conocer mas sobre la flora y fauna con la que te encontraras y los cuidados que debes tener sobre ella.</Parrafo>
             <Boton>Descargar</Boton>
             <Redes>
-                <a href='https://www.facebook.com/GranjaLosPibes/'>
+                <Vinculo href='https://www.facebook.com/GranjaLosPibes/'>
                     <Icon src={facebook} alt='Facebook' />
-                </a>
-                <a href='https://instagram.com/granja_los_pibes/'>
+                </Vinculo>
+                <Vinculo href='https://instagram.com/granja_los_pibes/'>
                     <Icon src={instagram} alt='instagram' />
-                </a>
-                <a href="tel:+542494545992">
+                </Vinculo>
+                <Vinculo href="tel:+542494545992">
                     <Icon src={whatsapp} alt='whatsapp' />
-                </a>
+                </Vinculo>
             </Redes>
+            <Ubicacion href="https://goo.gl/maps/MSTzN4kZi1pCCFms5" >
+                    <Ubi src={ubicacion} alt='ubicacion' />
+                    <Texto>Pje el Centinela - Tandil</Texto>
+            </Ubicacion>
         </Box>
     );
 }
