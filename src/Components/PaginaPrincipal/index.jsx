@@ -1,19 +1,18 @@
 import React from "react";
 import logo from "../../img/Logo2.png"
-import fondo from "../../img/Pagina-Principal.png";
+import fondo from "../../img/Fondoancho.png";
 import styled from "styled-components";
 
 
 const Box = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     text-align: center;
     background-image: url(${fondo});
-    width: 360px;
     height: 800px;
-    @media (max-width: 800px) {
+    min-width: 290px;
+    @media (max-width: 800px){
         width: auto;
     }
 `
