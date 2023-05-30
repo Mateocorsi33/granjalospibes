@@ -2,6 +2,9 @@ import React from "react";
 import logo from "../../img/Logo2.png"
 import fondo from "../../img/Fondoancho.png";
 import styled from "styled-components";
+import facebook from "../../img/facebook.png"
+import instagram from "../../img/instagram.png"
+import whatsapp from "../../img/whatsapp.png"
 
 
 const Box = styled.div`
@@ -64,6 +67,16 @@ const Boton = styled.button`
         background-color: #DC6D0F;
     }
 `
+const Redes = styled.div`
+    position: absolute;
+    top: 680px;
+`
+
+const Icon = styled.img`
+    width: 32px;
+    height: 32px;
+    margin-inline: 15px;
+`
 
 const PaginaPrincipal = () => {
     return (
@@ -72,6 +85,17 @@ const PaginaPrincipal = () => {
             <Titulo>Antes de salir a las sierras</Titulo>
             <Parrafo>Descarga nuestra guia para conocer mas sobre la flora y fauna con la que te encontraras y los cuidados que debes tener sobre ella.</Parrafo>
             <Boton>Descargar</Boton>
+            <Redes>
+                <a href='https://www.facebook.com/GranjaLosPibes/'>
+                    <Icon src={facebook} alt='Facebook' />
+                </a>
+                <a href='https://instagram.com/granja_los_pibes/'>
+                    <Icon src={instagram} alt='instagram' />
+                </a>
+                <a href="tel:+542494545992">
+                    <Icon src={whatsapp} alt='whatsapp' />
+                </a>
+            </Redes>
         </Box>
     );
 }
