@@ -54,6 +54,16 @@ const Boton = styled.button`
     box-shadow: 0px 4px 4px 0px #00000040;
     border-radius: 8px;
     border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: .3s;
+    /* DF751A  F8923B */
+    &:hover {
+        background-color: #DC6D0F;
+    }
 `
 
 const PaginaPrincipal = () => {
