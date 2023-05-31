@@ -6,7 +6,7 @@ import facebook from "../../img/facebook.png"
 import instagram from "../../img/instagram.png"
 import whatsapp from "../../img/whatsapp.png"
 import ubicacion from "../../img/ubicacion.png"
-import archivo from "../../Archivo/documento.pdf"
+import archivo from "../../Archivo/Guia - Granja Los Pibes.pdf"
 
 
 const Box = styled.div`
@@ -115,7 +115,7 @@ const PaginaPrincipal = () => {
             <Logo src={logo}></Logo>
             <Titulo>Antes de salir a las sierras</Titulo>
             <Parrafo>Descarga nuestra guía para conocer más sobre la flora y fauna con la que te encontrarás y los cuidados que debes tener sobre ella.</Parrafo>
-            <Boton><Descarga href={archivo} download="Guia - Granja los Pibes">Descargar</Descarga></Boton>
+            <Boton><Descarga download= 'Guia - Granja los Pibes' href={archivo}>Descargar</Descarga></Boton>
             <Redes>
                 <Vinculo href='https://www.facebook.com/GranjaLosPibes/'>
                     <Icon src={facebook} alt='Facebook' />
