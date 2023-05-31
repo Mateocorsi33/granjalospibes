@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "../../img/Logo2.png"
 import fondo from "../../img/Fondoancho.png";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import facebook from "../../img/facebook.png"
 import instagram from "../../img/instagram.png"
 import whatsapp from "../../img/whatsapp.png"
@@ -108,13 +108,33 @@ const Descarga = styled.a`
     color: #FFFFFF;
 `
 
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+const Loader = styled.div`
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: ${rotate} 2s linear infinite;
+`;
+
+
+
 const PaginaPrincipal = () => {
     return (
         <Box>
             <Logo src={logo}></Logo>
             <Titulo>Antes de salir a las sierras</Titulo>
             <Parrafo>Descarga nuestra guía para conocer más sobre la flora y fauna con la que te encontrarás y los cuidados que debes tener sobre ella.</Parrafo>
-            <Boton><Descarga href={archivo} download="Guia - Granja los Pibes" CircularUnderLoad>Descargar</Descarga></Boton>
+            <Boton><Descarga href={archivo} download="Guia - Granja los Pibes"><Loader>Descargar</Loader></Descarga></Boton>
             <Redes>
                 <Vinculo href='https://www.facebook.com/GranjaLosPibes/'>
                     <Icon src={facebook} alt='Facebook' />
