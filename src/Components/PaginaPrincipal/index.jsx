@@ -114,7 +114,7 @@ const PaginaPrincipal = () => {
             <Logo src={logo}></Logo>
             <Titulo>Antes de salir a las sierras</Titulo>
             <Parrafo>Descarga nuestra guía para conocer más sobre la flora y fauna con la que te encontrarás y los cuidados que debes tener sobre ella.</Parrafo>
-            <Boton><Descarga href={archivo} download="Guia - Granja los Pibes">Descargar</Descarga></Boton>
+            <Boton><Descarga href={archivo} download="Guia - Granja los Pibes" CircularUnderLoad>Descargar</Descarga></Boton>
             <Redes>
                 <Vinculo href='https://www.facebook.com/GranjaLosPibes/'>
                     <Icon src={facebook} alt='Facebook' />
