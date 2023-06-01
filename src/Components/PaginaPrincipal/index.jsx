@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../img/Logo2.png"
-import fondo from "../../img/Pagina-Principal.png";
+import fondo from "../../img/Pagina-Principal23.png";
 import styled from "styled-components";
 import facebook from "../../img/facebook.png"
 import instagram from "../../img/instagram.png"
@@ -14,11 +14,15 @@ const Box = styled.div`
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-image: url(${fondo});
     height: 800px;
     min-width: 290px;
     @media (max-width: 800px){
         width: auto;
+        background-image: url(${fondo});
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 844px;
     }
 `
 
