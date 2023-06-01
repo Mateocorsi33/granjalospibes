@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../img/Logo2.png"
-import fondo from "../../img/Fondoancho.png";
+import fondo from "../../img/Pagina-Principal.png";
 import styled from "styled-components";
 import facebook from "../../img/facebook.png"
 import instagram from "../../img/instagram.png"
@@ -67,7 +67,7 @@ const Boton = styled.button`
 `
 const Redes = styled.div`
     position: absolute;
-    top: 680px;
+    top: 660px;
 `
 
 const Icon = styled.img`
@@ -83,7 +83,7 @@ const Vinculo = styled.a`
 
 const Ubicacion = styled.a`
     position: absolute;
-    top: 735px;
+    top: 700px;
     display: flex;
     align-items: center;
     text-decoration: none;
