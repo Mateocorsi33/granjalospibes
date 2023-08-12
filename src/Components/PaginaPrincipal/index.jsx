@@ -10,6 +10,7 @@ import ubicacion from "../../img/ubicacion.png"
 import archivo from "../../Archivo/Guia - Granja Los Pibes.pdf"
 
 
+
 const Box = styled.div`
     display: flex;
     flex-direction: column;
@@ -116,7 +117,6 @@ const Descarga = styled.a`
     color: #FFFFFF;
 `
 
-
 const PaginaPrincipal = () => {
     return (
         <Box>
@@ -131,7 +131,7 @@ const PaginaPrincipal = () => {
                 <Vinculo href='https://instagram.com/granja_los_pibes/'>
                     <Icon src={instagram} alt='instagram' />
                 </Vinculo>
-                <Vinculo href="tel:+542494545992">
+                <Vinculo href="https://wa.me/message/MGKRGV2LBP5CK1">
                     <Icon src={whatsapp} alt='whatsapp' />
                 </Vinculo>
             </Redes>
