@@ -43,12 +43,13 @@ const Titulo = styled.h1`
     top: 275px;
     line-height: 23px;
     align-items:center;
-    font-family: 'Roboto Condensed', sans-serif;
-    color: #ffffff;
+    font-family: 'Bebas Neue';
+    color: #D6D582;
+    letter-spacing: 1px;
 `
 const Parrafo = styled.p`
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-family: 'Bebas Neue';
+    font-size: 1.5rem;
     font-weight: 400;
     position: absolute;
     width: 298px;
@@ -63,15 +64,14 @@ const Boton = styled.button`
     width: 222px;
     height: 46px;
     top: 540px;
-    background: #F58220;
+    background-color: #9FB23B;
     box-shadow: 0px 4px 4px 0px #00000040;
     border-radius: 8px;
     border: none;
     cursor: pointer;
     transition: .3s;
-    /* DF751A  F8923B */
     &:hover {
-        background-color: #DC6D0F;
+        opacity: 0.9;
     }
 `
 const Redes = styled.div`
@@ -80,8 +80,8 @@ const Redes = styled.div`
 `
 
 const Icon = styled.img`
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     margin-inline: 15px;
 `
 const Vinculo = styled.a`
