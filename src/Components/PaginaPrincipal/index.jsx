@@ -9,6 +9,7 @@ import whatsapp from "../../img/whatsapp.png"
 import youtube from "../../img/youtube.png"
 import ubicacion from "../../img/ubicacion.png"
 import archivo from "../../Archivo/Guia - Granja Los Pibes.pdf"
+import { Analytics } from '@vercel/analytics/react';
 
 
 
@@ -125,6 +126,7 @@ const Descarga = styled.a`
 const PaginaPrincipal = () => {
     return (
         <Box>
+            <Analytics />
             <Logo src={logo}></Logo>
             <Titulo>Antes de salir a las sierras</Titulo>
             <Parrafo>Descarga nuestra guía para conocer más sobre la flora y fauna con la que te encontrarás y los cuidados que debes tener sobre ella.</Parrafo>
