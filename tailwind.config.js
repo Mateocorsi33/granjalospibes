@@ -14,9 +14,9 @@ module.exports = withMT({
         poppins: ["Poppins", "sans-serif"],
         bebasneue: ["Bebas Neue", "sans-serif"],
       },
-      backgroundImage: {
-        'custom-image': 'url("https://cdn.discordapp.com/attachments/1062447758587473931/1184119287426855023/fondo-mosaico.png?ex=658ad005&is=65785b05&hm=8c7ef51f334b6edb4b39bbae2b23d88ee5e4abeb7cd9150f5a6e92d1dc94cbcc&")',
-      },
+      // backgroundImage: {
+      //   'custom-image': 'url("https://cdn.discordapp.com/attachments/1062447758587473931/1184119287426855023/fondo-mosaico.png?ex=658ad005&is=65785b05&hm=8c7ef51f334b6edb4b39bbae2b23d88ee5e4abeb7cd9150f5a6e92d1dc94cbcc&")',
+      // },
     },
     colors: {
       primary: {

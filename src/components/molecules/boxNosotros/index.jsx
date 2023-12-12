@@ -16,7 +16,7 @@ export default function BoxNosotros() {
   ];
 
   return (
-    <div className="flex flex-col px-6 py-10 gap-2 justify-center" data-aos="fade-up"  data-aos-duration="1500">
+    <div className="flex flex-col px-6 py-10 gap-2 justify-center">
         <Titulo texto="Nosotros" classAdicional="text-white"/>
         <Parrafo texto={textoParrafo} classAdicional="text-white"/>
     </div>
