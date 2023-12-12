@@ -1,12 +1,15 @@
 import './App.css';
-import PaginaPrincipal from './Components/PaginaPrincipal';
+import "./index.css";
+import 'animate.css';
+import Home from './components/pages/Home';
 import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
-    <PaginaPrincipal>
+    <>
       <Analytics />
-    </PaginaPrincipal>
+      <Home/>
+    </>
   );
 }
 
